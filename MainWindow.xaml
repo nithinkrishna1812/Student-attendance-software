@@ -1,0 +1,26 @@
+﻿<Window x:Class="miniproject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:miniproject"
+        mc:Ignorable="d"
+        Title="Infotech" Height="750" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Icon="Resources/logo.png" Background="LightGray">
+    <Canvas>
+        <Image Source="./Resources/bg.png" Height="579" Width="1192" Canvas.Top="252" Canvas.Left="4"/>
+        <Label Content="Record your Attendance and Marks" FontSize="45" FontFamily="Segoe Print" Canvas.Left="332" Canvas.Top="10"/>
+        <Label Content="Keep a track of your Attendance" FontSize="20" FontFamily="Segoe Print" Canvas.Left="816" Canvas.Top="69"/>
+        <Label Content="and" FontSize="25" FontFamily="Segoe Print" Canvas.Left="966" Canvas.Top="99"/>
+        <Label Content="Academics" FontSize="20" FontFamily="Segoe Print" Canvas.Left="942" Canvas.Top="137"/>
+        <Image Source="Resources/image.png" Canvas.Left="332" Canvas.Top="99"/>
+        <Canvas x:Name="panel" Width="300" Height="721" VerticalAlignment="Top" HorizontalAlignment="Center" Background="WhiteSmoke">
+            <Image Source="./Resources/logo.png" Height="300" Width="300"/>
+            <Button Height="80" Width="296" Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" Canvas.Top="370" Content="Attendance" FontSize="30" FontFamily="Segoe Print" FontWeight="Bold" Click="Attendance_Click" Cursor="Hand"/>
+            <Button Height="80" Width="296" Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" Canvas.Top="450" Content="IA Marks" FontSize="30" FontFamily="Segoe Print" FontWeight="Bold" Click="IA_Click" Cursor="Hand"/>
+            <Image Source="./Resources/attendace.png" Height="50" Width="50" Canvas.Left="10" Canvas.Top="388"/>
+            <Image Source="./Resources/ia.png" Height="50" Width="50" Canvas.Left="10" Canvas.Top="464"/>
+        </Canvas>
+        <Frame x:Name="myframes" NavigationUIVisibility="Hidden" Height="721" Width="894" Canvas.Left="300"/>
+        
+    </Canvas>
+</Window>
